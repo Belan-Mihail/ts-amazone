@@ -37,4 +37,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 )
 
 
-// 1:38:00
+//4 import bootstrap, delete App.css and clear index.css then go to app.tsx
+//5 import picking a router and edit main.tsx. then create HomePage and put code from <main></main>
+//7 <Route index={true} element={<HomePage />} /> then add outlet to app.tsx
+//8 create Product pge and add route. then home page
+
+//19 add base url and install npm i --save-dev @types/node and go HomePage.tsx
