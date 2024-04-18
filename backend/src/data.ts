@@ -1,4 +1,6 @@
-import { Product } from "./types/Products";
+import { Product } from './models/productModel'
+import bcrypt from 'bcryptjs'
+import { User } from './models/userModel'
 
 export const sampleProducts: Product[] = [
   {
@@ -51,4 +53,17 @@ export const sampleProducts: Product[] = [
   },
 ];
 
-//2 create Products samples. Then add images and then go to app.tsx
+export const sampleUsers: User[] = [
+  {
+    name: 'Joe',
+    email: 'admin@example.com',
+    password: bcrypt.hashSync('123456'),
+    isAdmin: true,
+  },
+  {
+    name: 'John',
+    email: 'user@example.com',
+    password: bcrypt.hashSync('123456'),
+    isAdmin: false,
+  },
+]
